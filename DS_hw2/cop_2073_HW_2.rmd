@@ -1,0 +1,64 @@
+---
+title: "Introduction to Data Science - HW 2"
+subtitle: "Lorenzo Cirocco - lcirocco8670@floridapoly.edu"
+output: html_notebook
+---
+
+# Problem 1 (20 points)
+
+During class you completed an activity in which you practiced `git` commands and operations (such as forking a repository, cloning it using `git clone`, and uploading changes using `git push`).
+
+In this exercise you will used **markdown** tools discussed in class.
+
+## Part A
+
+You must **create a table** that shows the courses you are currently enrolled in, using the following for the headers of the table:
+
+-   Prefix: in bold letters (such as **COP**)
+-   Number: in bold letters (such as **2073**)
+-   Name: in italics (such as *Introduction to Data Science*)
+-   Credits (such as 3)
+
+| **Prefix**  |  **Number**  |               *Name*                         | Credits |
+|:-------:|:--------:|:----------------------------------------------------:|:-------:|
+| **COP** | **2073** |            *Introduction to Data Science*            |    3    |
+| **BUL** | **2241** |   *Law, Public Policy, Negotiation, and Business*    |    3    |
+| **ENT** | **2112** |        *Entrepreneurial Opportunity Analysis*        |    3    |
+| **FIN** | **2001** |          *Introduction to Business Finance*          |    3    |
+| **GEB** | **3373** | *International & Comparative Dimensions of Business* |    3    |
+
+## Part B
+
+Take a screenshot of the GitHub repo you used in HW 01, add the screenshot file to the repo, and include it in this document (review how to insert a picture using markdown).
+
+# Problem 2 (30 points)
+
+For this problem, you are asked to create a list of **4 concepts** you have learned about so far this semester. Include the name of the course as a sub-heading (that is, using `##`), and the concepts as an unordered list. Include a link to information about *at least one* of the concepts you listed (for example a link to the Wikipedia page about that concept/topics).
+
+*Edit this `.Rmd` file to include the solutions here.*
+
+# Problem 3 (25 points)
+
+In this problem you will practice some basic R operations. Include solutions to each items by inserting a new R chunk of code (make sure you run the chunk so that the output is displayed)
+
+(a) Create a variable called `my_name` that contains *your preferred name*.
+
+(b) Create a variable called `name_length` that holds how many letters are in `my_name`.
+
+(c) Show which value is bigger: $e^\pi$ or $\pi^e$. (Use the correct expressions for Euler's constant $e$ and the irrational number $\pi$ in R)
+
+(d) Use the colon operator `:` to create a vector `v` of numbers from 31 to 86. Find the length of this vector using the `length()` function.
+
+(e) Use the `seq()` function to produce a range of number from -5 to 10 in 0.5 increments.
+
+# Problem 4 (25 points)
+
+(a) (10 points) Define a function `imperial_to_metric` that takes in **two arguments**: a number of feet and a number of inches. The function should return the equivalent length in meters
+
+> To convert a length `L` from feet (`ft`) and inches (`inches`) to meters (`m`), one can use the relation: `L(m) = L(ft) × 0.3048 + L(inches) × 0.0254`
+
+(b) (5 points) Create a variable `height_in_meters` by passing your height in imperial to the `imperial_to_metric` function.
+
+(c) (5 points) Evaluate `round(3.1415)`, `factorial(12)`, `mean(1:17)`.
+
+(d) (5 points) Create an object named `die` that contains the numbers one through six. Simulate a roll of the die with `R`'s `sample()` function.
